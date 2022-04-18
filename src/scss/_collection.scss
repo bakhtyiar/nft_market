@@ -1,0 +1,27 @@
+.collection {
+	&__categories {
+		display: flex;
+		flex-direction: row !important;
+		padding-left: 0;
+		:nth-last-child(1) {
+			margin-right: 0;
+		}
+	}
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+		margin-top: 30px;
+	}
+	&__card {
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+	}
+	.list-group-item {
+		margin-right: 15px;
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.primary-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+	border-width: 0;
+	border-radius: 10px;
+	color: white;
+	font-weight: 500;
+	&__icon {
+		margin-right: 4px;
+	}
+}

@@ -1,0 +1,47 @@
+.card {
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	max-width: fit-content;
+	margin-right: 15px;
+	// p {
+	// 	color: black !important;
+	// }
+	img {
+		border-radius: 1px 1px% 0 0 ;
+	}
+	&__image {
+		margin: 26px 26px 0 26px;
+		border-radius: 10px;
+	}
+	&__info {
+		margin: 20px 26px 0px 26px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__nickname {
+		opacity: 0.5;
+		margin-bottom: 0;
+	}
+	&__bid-name {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	&__price {
+		font-weight: bold;
+		text-align: right;
+		margin-bottom: 0;
+	}
+	&__price-currency {
+		font-weight: bold;
+	}
+	&__price-label {
+		font-size: smaller;
+		text-align: right;
+		opacity: 0.5;
+		margin-bottom: 0;
+	}
+	&__button {
+		margin: 26px;
+	}
+}

@@ -1,0 +1,32 @@
+.first-section {
+	display: flex;
+	flex-direction: row;
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+	}
+	&__button {
+		margin-right: 20px;
+	}
+	&__images {
+		display: flex;
+		&-column {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__image {
+		margin: 15px;
+		border-radius: 11px;
+	}
+	&__stats {
+		display: flex;
+		flex-direction: row;
+		padding-left: 0;
+		margin-top: 40px;
+	}
+	&__li {
+		display: flex;
+		flex-direction: column;
+	}
+}

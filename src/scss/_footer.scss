@@ -1,0 +1,32 @@
+.footer {
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logotype {
+		font-size: x-large;
+	}
+	&__paragraph {
+		font-size: medium;
+		max-width: 360px;
+	}
+	&__socials {
+		display: flex;
+	}
+	&__social-li {
+		margin-right: 16px;
+	}
+	li {
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+	&__copyright-paragraph {
+		text-align: center;
+	}
+}

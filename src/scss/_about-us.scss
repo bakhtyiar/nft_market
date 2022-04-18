@@ -1,0 +1,19 @@
+.about-us {
+	&__image {
+		border-radius: 11px;
+	}
+	&__body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__media {
+		margin-right: 110px;
+	}
+	&__inf {
+		max-width: 430px;
+	}
+	&__button {
+		margin-top: 20px;
+	}
+}
