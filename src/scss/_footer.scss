@@ -9,6 +9,7 @@
 	&__paragraph {
 		font-size: medium;
 		max-width: 360px;
+		opacity: 0.5;
 	}
 	&__socials {
 		display: flex;
@@ -17,16 +18,26 @@
 		margin-right: 16px;
 	}
 	li {
-		a {
+		margin-bottom: 20px;
+		&>h3>a {
 			color: white;
 			text-decoration: none;
 		}
-		a:hover {
+		&>h3>a:hover {
+			opacity: 0.9;
+		}
+		&>a {
+			color: white;
+			text-decoration: none;
+			opacity: 0.5;
+		}
+		&>a:hover {
 			color: white;
 			text-decoration: underline;
 		}
 	}
 	&__copyright-paragraph {
 		text-align: center;
+		margin-bottom: 50px;
 	}
 }

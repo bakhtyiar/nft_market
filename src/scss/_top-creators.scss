@@ -9,10 +9,25 @@
 		&:nth-last-child(1) {
 			margin-right: 0;
 		}
+		#top-creator-bg-1 {
+			min-height: 134px;
+			max-width: 100%;
+			background-image: url(../assets/img/creators/backgrounds/cr1_dan-cristian-padure-SMSLyc9FHl0-unsplash\ \(1\)\ 1_creators_bg.jpg);
+		}
+		#top-creator-bg-2 {
+			min-height: 134px;
+			max-width: 100%;
+			background-image: url(../assets/img/creators/backgrounds/cr2_david-sjunnesson-XMOX_4H8Ifc-unsplash\ cr2_1_creators_bg.jpg);
+		}
+		#top-creator-bg-3 {
+			min-height: 134px;
+			max-width: 100%;
+			background-image: url(../assets/img/creators/backgrounds/cr3_zak-7wBFsHWQDlk-unsplash\ 1_creators_bg.jpg);
+		}
 	}
 	.card {
 		&__background {
-			margin: 0 !important;
+			margin: 0 ;
 		}
 		&__avatar {
 			align-self: center;
@@ -23,7 +38,7 @@
 		}
 		&__fullname {
 			text-align: center;
-			font-size: larger !important;
+			font-size: larger ;
 			font-weight: 700;
 		}
 		&__bid-name {

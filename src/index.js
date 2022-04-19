@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import '@root/src/index.html';
 import '@root/node_modules/bootstrap/dist/js/bootstrap';
-import '@root/node_modules/bootstrap/dist/css/bootstrap.css';
 import '@root/src/scss/style.scss';
 
 // let path = require.context('@assets/img/first_section', true, /\.(png|svg|jpg|jpeg|webm|gif)$/);
