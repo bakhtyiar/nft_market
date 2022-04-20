@@ -1,12 +1,14 @@
 .partners {
 	&__logotypes {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		flex-wrap: wrap;
 		flex-shrink: 1;
 	}
 	&__logotype {
 		filter: grayscale(1);
 		transition: all .3s ease;
+		margin: 24px 32px;
 		&:hover {
 			filter: grayscale(0);
 		}

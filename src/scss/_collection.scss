@@ -1,20 +1,9 @@
 .collection {
 	&__categories {
 		display: flex;
-		flex-direction: row ;
+		flex-direction: row;
 		padding-left: 0;
 		:nth-last-child(1) {
-			margin-right: 0;
-		}
-	}
-	&__cards {
-		display: flex;
-		justify-content: space-between;
-		flex-grow: 1;
-		margin-top: 30px;
-	}
-	&__card {
-		&:nth-last-child(1) {
 			margin-right: 0;
 		}
 	}
@@ -23,5 +12,18 @@
 		&:nth-last-child(1) {
 			margin-right: 0;
 		}
+	}
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	&__card {
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+		min-width: 320px;
+		margin-bottom: 30px;
 	}
 }

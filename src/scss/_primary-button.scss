@@ -5,10 +5,18 @@
 	align-items: center;
 	padding: 10px 20px;
 	background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+	box-shadow: 2px 8px 20px 1px rgba(0, 0, 0, 0.1);
 	border-width: 0;
 	border-radius: 10px;
 	color: white;
 	font-weight: 500;
+	&:hover {
+		box-shadow: -2px 8px 8px 1px rgba(0,0,0,0);
+		// background: linear-gradient(214.02deg, #b65cffc5 6.04%, #671ae4b4 92.95%);
+	}
+	&:active {
+		box-shadow: inset -8px 8px 8px 1px rgba(0,0,0,0.1);
+	}
 	&__icon {
 		margin-right: 4px;
 	}

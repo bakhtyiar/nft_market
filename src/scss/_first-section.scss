@@ -10,9 +10,17 @@
 	&__buttons {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 	}
 	&__button {
 		margin-right: 20px;
+		min-width: 135px;
+	}
+	.primary-button {
+		max-height: 44px;
+	}
+	.secondary-button {
+		padding: 12px 20px;
 	}
 	&__images {
 		display: flex;
@@ -43,5 +51,13 @@
 	&__li {
 		display: flex;
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 991px) {
+	.first-section {
+		&__images {
+			display: none;
+		}
 	}
 }

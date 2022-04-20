@@ -6,7 +6,10 @@
 	align-items: center;
 	height: 100px;
 	&__logotype {
-		margin: 0 15px;
+		margin: 5px 15px;
+		a {
+			text-decoration: none;
+		}
 	}
 	&__logotype * {
 		font-size: larger;
