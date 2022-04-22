@@ -29,6 +29,11 @@
 	.card {
 		margin-bottom: 30px;
 		max-width: 389px;
+		&__button {
+			.primary-button__icon {
+				margin-right: 4px;
+			}
+		}
 		&__background {
 			margin: 0 ;
 		}
@@ -41,8 +46,10 @@
 		}
 		&__fullname {
 			text-align: center;
-			font-size: larger ;
-			font-weight: 700;
+			font: {
+				size: larger;
+				weight: 700;
+			};
 		}
 		&__bid-name {
 			opacity: 0.5;

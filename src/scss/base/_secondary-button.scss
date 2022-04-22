@@ -1,0 +1,12 @@
+@import 'button';
+
+.secondary-button {
+	@include button;
+	background: rgba(0, 0, 0, 0.3);
+	&:hover {
+		box-shadow: -2px 8px 8px 1px rgba(0,0,0,0);
+	}
+	&:active {
+		box-shadow: inset -8px 8px 8px 1px rgba(0,0,0,0.2);
+	}
+}

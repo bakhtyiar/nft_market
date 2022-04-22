@@ -1,4 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 @font-face {
 	font-family: "Poppins";
 	src: url("../assets/fonts/Poppins-Regular.ttf") format("ttf"),
@@ -6,39 +5,12 @@
 };
 @import url(@root/node_modules/normalize.css/normalize.css);
 @import '@root/node_modules/bootstrap/dist/css/bootstrap.css';
+@import '@root/node_modules/bootstrap/scss/bootstrap.scss';
 @import 'lib';
 
 * {
 	font-family: 'Poppins', sans-serif;
 	color: white;
-	// border: #B75CFF 1px solid;
-	// box-sizing: border-box;
-}
-
-p {
-	font-size: medium;
-}
-
-body {
-	background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
-}
-
-section {
-	margin-top: 100px;
-}
-
-li {
-	list-style-type: none;
-	margin-left: 0;
-    padding-left: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-}
-
-h1 {
-	font-size: xx-large;
 }
 
 .list-group {
@@ -46,40 +18,7 @@ h1 {
 	.active {
 		background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
 	}
-}
-
-.list-group-item {
-	border-radius: 10px ;
-}
-
-.logotype {
-	&--accent {
-		background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		text-fill-color: transparent;
-	}
-}
-
-.faq-section {
-	&__questions-col {
-		display: flex;
-	}
-}
-
-.accordion {
 	&-item {
-		margin: 16px 8px;
-		border-radius: 10px;
-	}
-	&-body {
-		color: black;
-	}
-	&-button  {
-		border-radius: 10px;
-	}
-	&-header {
-		border-radius: 10px;
+		border-radius: 10px !important;
 	}
 }

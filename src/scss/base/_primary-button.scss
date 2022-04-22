@@ -1,0 +1,13 @@
+@import 'button';
+
+.primary-button {
+	@include button;
+	background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+	&:hover {
+		background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+		box-shadow: -2px 8px 8px 1px rgba(0,0,0,0);
+	}
+	&:active {
+		box-shadow: inset -8px 8px 8px 1px rgba(0,0,0,0.1);
+	}
+}

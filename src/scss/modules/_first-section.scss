@@ -28,6 +28,9 @@
 			display: flex;
 			flex-direction: column;
 		}
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
 	}
 	&__image {
 		margin: 15px;
@@ -51,13 +54,5 @@
 	&__li {
 		display: flex;
 		flex-direction: column;
-	}
-}
-
-@media (max-width: 991px) {
-	.first-section {
-		&__images {
-			display: none;
-		}
 	}
 }

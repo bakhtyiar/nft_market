@@ -8,6 +8,15 @@
 	&__media {
 		margin-right: 60px;
 		max-width: 320px;
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+		@include media-breakpoint-down(lg) {
+			margin: {
+				right: 0px;
+				bottom: 40px;
+			};
+		}
 	}
 	&__image {
 		border-radius: 11px;
@@ -18,18 +27,7 @@
 		p {
 			margin-top: 20px;
 		}
-	}
-	&__button {
-		margin-top: 30px;
-	}
-	&__info-paragraph {
-		opacity: 0.5;
-	}
-}
-
-@media (max-width: 991px) {
-	.about-us {
-		&__inf {
+		@media (max-width: 991px) {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -37,17 +35,11 @@
 				text-align: center;
 			}
 		}
-		&__media {
-			margin-right: 0px;
-			margin-bottom: 40px;
-		}
 	}
-}
-
-@media (max-width: 576px) {
-	.about-us {
-		&__media {
-			display: none;
-		}
+	&__button {
+		margin-top: 30px;
+	}
+	&__info-paragraph {
+		opacity: 0.5;
 	}
 }

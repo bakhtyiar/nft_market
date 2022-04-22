@@ -5,6 +5,8 @@
 	max-width: fit-content;
 	margin-right: 15px;
 
+	@include media-breakpoint-down(md) {
+	}
 	&__background {
 		max-height: 50px;
 		border-radius: 10px 10px 0 0;
@@ -13,11 +15,20 @@
 		margin: 26px 26px 0 26px;
 		border-radius: 10px 10px 10px 10px;
 		max-width: 100%;
+		@include media-breakpoint-down(lg) {
+			max-width: 270px;
+		}
+		@include media-breakpoint-down(md) {
+			max-width: 130px;
+		}
 	}
 	&__info {
 		margin: 20px 26px 0px 26px;
 		display: flex;
 		justify-content: space-between;
+		@include media-breakpoint-down(md) {
+			flex-direction: column;
+		}
 	}
 	&__nickname {
 		opacity: 0.5;
@@ -31,6 +42,9 @@
 		font-weight: bold;
 		text-align: right;
 		margin-bottom: 0;
+		@include media-breakpoint-down(md) {
+			text-align: left;
+		}
 	}
 	&__price-currency {
 		font-weight: bold;
@@ -40,6 +54,10 @@
 		text-align: right;
 		opacity: 0.5;
 		margin-bottom: 0;
+		@include media-breakpoint-down(md) {
+			text-align: left;
+			margin-top: 5px;
+		}
 	}
 	&__button {
 		margin: 26px;

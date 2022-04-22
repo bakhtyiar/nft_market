@@ -60,7 +60,7 @@ module.exports = {
 			'@assets': path.resolve(__dirname, 'src/assets/')
 		}
 	},
-	devtool: 'source-map',
+	devtool: 'eval-source-map',
 	devServer: {
 		hot: true,
 		static: {
