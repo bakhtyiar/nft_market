@@ -19,6 +19,15 @@
 		background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
 	}
 	&-item {
-		border-radius: 10px !important;
+		margin-right: 15px;
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+		@include media-breakpoint-up(sm) {
+			border-radius: 10px !important;
+			margin-right: 15px;
+			width: 100%;
+		}
 	}
+
 }

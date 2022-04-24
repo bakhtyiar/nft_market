@@ -26,6 +26,9 @@
 	}
 	&__logotype {
 		font-size: x-large;
+		a {
+			text-decoration: none;
+		}
 		@include media-breakpoint-down(lg) {
 			text-align: center;
 		}
