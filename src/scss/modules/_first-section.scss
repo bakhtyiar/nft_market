@@ -1,8 +1,23 @@
 .first-section {
 	display: flex;
 	flex-direction: row;
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 32px;
+	}
+	&__info {
+		@include media-breakpoint-down(sm) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
 	h1 {
 		font-size: xxx-large;
+		@include media-breakpoint-down(md) {
+			font-size: xx-large;
+		}
 	}
 	&__paragraph {
 		opacity: 0.5;
@@ -15,6 +30,12 @@
 	&__button {
 		margin-right: 20px;
 		min-width: 135px;
+		@include media-breakpoint-down(sm) {
+			&:nth-last-child(1) {
+				margin-right: 0;
+			}
+			width: 30vw;
+		}
 	}
 	.primary-button {
 		max-height: 44px;
@@ -24,23 +45,53 @@
 	}
 	&__images {
 		display: flex;
+		@include media-breakpoint-down(md) {
+			max-width: 180px;
+		}
 		&-column {
 			display: flex;
 			flex-direction: column;
-		}
-		@include media-breakpoint-down(lg) {
-			display: none;
+			@include media-breakpoint-down(lg) {
+				max-width: 180px;
+				&:nth-child(3) {
+					display: none;
+				}
+			}
+			@include media-breakpoint-down(md) {
+				&:nth-child(2) {
+					display: none;
+				}
+			}
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
 		}
 	}
 	&__image {
 		margin: 15px;
 		border-radius: 11px;
+		@include media-breakpoint-down(md) {
+			&:nth-last-child(1) {
+				display: none;
+			}
+		}
 	}
 	&__stats {
 		display: flex;
 		flex-direction: row;
 		padding-left: 0;
 		margin-top: 40px;
+		width: 100%;
+	}
+	&__stat-col {
+		display: flex;
+		flex-direction: column;
+		margin-right: 42px;
+		width: 100%;
+		@include media-breakpoint-down(sm) {
+			justify-content: center;
+			text-align: center;
+		}
 	}
 	&__stat {
 		h3 {
@@ -50,9 +101,5 @@
 	}
 	&__label {
 		opacity: 0.5;
-	}
-	&__li {
-		display: flex;
-		flex-direction: column;
 	}
 }
