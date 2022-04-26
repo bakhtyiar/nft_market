@@ -1,6 +1,28 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+let isDev = process.env.NODE_ENV === 'development';
+let isProd = !isDev;
+
+const optimization = () => {
+	const config = {
+		splitChunks: {
+			chunks: 'all'
+		}
+	};
+
+	if (isProd) {
+		config.minimizer = [
+			new OptimizeCssAssetsPlugin(),
+			new TerserPlugin(),
+		]
+	};
+
+	return config;
+}
 
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
@@ -19,18 +41,11 @@ module.exports = {
 				loader: "html-loader",
 			},
 			{
-				test: /\.css$/i,
-				use: [
-					"style-loader", 
-					"css-loader",
-					"postcss-loader",
-				]
-			},
-			{
 				test: /\.s[ac]ss$/i,
 				use: [
 				"style-loader",
 				"css-loader",
+				"postcss-loader",
 				"sass-loader",
 				]			
 			},
@@ -44,6 +59,16 @@ module.exports = {
 					'file-loader'
 				],
 				type: 'javascript/auto'
+			},
+			{
+				test: /\.m?js$/,
+				exclude: /node_modules/,
+				use: {
+				  loader: "babel-loader",
+				  options: {
+					presets: ['@babel/preset-env']
+				  }
+				}
 			}
 		]
 	},
@@ -59,19 +84,14 @@ module.exports = {
 			'@assets': path.resolve(__dirname, 'src/assets/')
 		}
 	},
-	devtool: 'eval-source-map',
+	devtool: isDev ? 'eval-source-map' : 'eval',
 	devServer: {
 		hot: true,
 		static: {
 			directory: path.join(__dirname, 'src'),
 			publicPath: '/serve-public-path-url',
 		  },
-		compress: true,
 		port: 9000,
 	},
-	optimization: {
-		splitChunks: {
-			chunks: 'all'
-		}
-	}
+	optimization: optimization(),
 };
