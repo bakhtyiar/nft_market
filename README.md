@@ -1,4 +1,4 @@
-# nft_market
+# NFT-Market-Promo
 ## Landing page layout adaptive
 
 ![preview image](./github_preview.jpg)
