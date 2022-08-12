@@ -14,4 +14,5 @@
 1. open cli
 2. > git clone https://github.com/bakhtyiar/NFT-Market-Promo.git
 3. > cd NFT-Market-Promo
-4. > npm run server
+4. > npm i
+5. > npm run server
