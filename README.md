@@ -1,5 +1,5 @@
 # nft_market
-## Landing page layout
+## Landing page layout adaptive
 
 ![preview image](./github_preview.jpg)
 
@@ -12,6 +12,6 @@
 
 ## How to try
 1. open cli
-2. > git clone https://github.com/bakhtyiar/nft_market.git
-3. > cd nft_market
+2. > git clone https://github.com/bakhtyiar/NFT-Market-Promo.git
+3. > cd NFT-Market-Promo
 4. > npm run server
