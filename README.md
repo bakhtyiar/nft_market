@@ -1,7 +1,7 @@
 # nft_market
 ## Landing page layout
 
-![preview image](./github_preview.png)
+![preview image](./github_preview.jpg)
 
 ## Instruments
 - Bootstrap 
