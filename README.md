@@ -1,2 +1,11 @@
-# fcc_nft_market_tribute_page
-This is a practice project to practice using Bootstrap, Sass(scss), Webpack while developing a website.
+# nft_market
+## Landing page layout
+
+![preview image](./github_preview.png)
+
+## Instruments
+- Bootstrap 
+- Sass(scss) 
+- Webpack 
+- HTML
+- JS
